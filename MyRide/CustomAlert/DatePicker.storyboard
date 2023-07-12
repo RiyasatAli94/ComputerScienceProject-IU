@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date View Controller-->
+        <scene sceneID="bf8-fo-rK7">
+            <objects>
+                <viewController storyboardIdentifier="DateViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RBa-N4-rBJ" customClass="DateViewController" customModule="MyRide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NB8-CQ-n3N">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-if-nsc">
+                                <rect key="frame" x="5" y="228.66666666666663" width="383" height="420"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-DW-oIW">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="370"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-Sb-c9k">
+                                        <rect key="frame" x="0.0" y="370" width="383" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YqQ-q5-NwP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Select"/>
+                                        <connections>
+                                            <action selector="selectDate:" destination="RBa-N4-rBJ" eventType="touchUpInside" id="WYr-gV-dGn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="Y9N-DW-oIW" firstAttribute="leading" secondItem="Tgl-if-nsc" secondAttribute="leading" id="4qL-Bg-ELc"/>
+                                    <constraint firstItem="xjq-Sb-c9k" firstAttribute="top" secondItem="Y9N-DW-oIW" secondAttribute="bottom" id="5h1-Y7-ShS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9N-DW-oIW" secondAttribute="trailing" id="GwN-jG-Kzj"/>
+                                    <constraint firstItem="xjq-Sb-c9k" firstAttribute="leading" secondItem="Tgl-if-nsc" secondAttribute="leading" id="Tg7-SE-cZz"/>
+                                    <constraint firstAttribute="bottom" secondItem="xjq-Sb-c9k" secondAttribute="bottom" id="TlT-Lr-206"/>
+                                    <constraint firstAttribute="height" constant="420" id="cQg-ga-t0K"/>
+                                    <constraint firstAttribute="trailing" secondItem="xjq-Sb-c9k" secondAttribute="trailing" id="mn9-V7-e6Q"/>
+                                    <constraint firstItem="Y9N-DW-oIW" firstAttribute="top" secondItem="Tgl-if-nsc" secondAttribute="top" id="ty4-dA-m3d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l8L-vo-tBc"/>
+                        <color key="backgroundColor" white="1" alpha="0.51758620909999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tgl-if-nsc" firstAttribute="centerY" secondItem="l8L-vo-tBc" secondAttribute="centerY" id="S6V-Rp-QDh"/>
+                            <constraint firstItem="Tgl-if-nsc" firstAttribute="leading" secondItem="l8L-vo-tBc" secondAttribute="leading" constant="5" id="UnZ-FE-IGv"/>
+                            <constraint firstItem="l8L-vo-tBc" firstAttribute="trailing" secondItem="Tgl-if-nsc" secondAttribute="trailing" constant="5" id="sDY-zl-heY"/>
+                            <constraint firstItem="Tgl-if-nsc" firstAttribute="centerX" secondItem="l8L-vo-tBc" secondAttribute="centerX" id="zhs-R2-6V3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Y9N-DW-oIW" id="Jdg-1E-dff"/>
+                        <outlet property="selectDatebtn" destination="xjq-Sb-c9k" id="ZCM-oc-OjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THX-Jb-dsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738.1679389312976" y="79.577464788732399"/>
+        </scene>
+        <!--Day Picker View Controller-->
+        <scene sceneID="tKQ-f1-1Nf">
+            <objects>
+                <viewController storyboardIdentifier="DayPickerViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sMu-F8-xga" customClass="DayPickerViewController" customModule="MyRide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMS-hZ-DSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZe-ml-FLA">
+                                <rect key="frame" x="5" y="228.66666666666663" width="383" height="420"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-od-elD">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Ksw-VS-HBc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Monday"/>
+                                        <connections>
+                                            <action selector="mondaybtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="Jby-gb-9S8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joC-Tp-bDU">
+                                        <rect key="frame" x="0.0" y="60.000000000000028" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Bya-EA-k3R"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Tuesday"/>
+                                        <connections>
+                                            <action selector="tuesdaybtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="kC5-bj-T6H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u33-Ne-Ytk">
+                                        <rect key="frame" x="0.0" y="120.00000000000003" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1nI-OX-JW6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Wednesday"/>
+                                        <connections>
+                                            <action selector="wednesdaybtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="tbG-d5-tnR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-XW-tYW">
+                                        <rect key="frame" x="0.0" y="180.00000000000003" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="n2V-Qe-sYp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Thusday"/>
+                                        <connections>
+                                            <action selector="thusdaybtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="BHE-bN-3NK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIE-G6-6jF">
+                                        <rect key="frame" x="0.0" y="240" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1ZG-Xj-cTX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Friday"/>
+                                        <connections>
+                                            <action selector="fridaybtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="ccR-7k-NH8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwa-hG-RNt">
+                                        <rect key="frame" x="0.0" y="300" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Mds-mb-EeX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Saturday"/>
+                                        <connections>
+                                            <action selector="satbtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="QzM-G0-y8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM8-uQ-Y0F">
+                                        <rect key="frame" x="0.0" y="360" width="383" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="z3m-zq-JdK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sunday"/>
+                                        <connections>
+                                            <action selector="sunbtn:" destination="sMu-F8-xga" eventType="touchUpInside" id="GdX-Os-FFw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oK5-XW-tYW" secondAttribute="trailing" id="5rZ-ba-2nB"/>
+                                    <constraint firstItem="GM8-uQ-Y0F" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="6yV-Sr-QF6"/>
+                                    <constraint firstItem="u33-Ne-Ytk" firstAttribute="top" secondItem="joC-Tp-bDU" secondAttribute="bottom" id="7nm-sa-Fb5"/>
+                                    <constraint firstItem="XMc-od-elD" firstAttribute="top" secondItem="EZe-ml-FLA" secondAttribute="top" id="8rP-iR-q9e"/>
+                                    <constraint firstItem="Qwa-hG-RNt" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="9UA-Uu-eWa"/>
+                                    <constraint firstAttribute="trailing" secondItem="NIE-G6-6jF" secondAttribute="trailing" id="ANR-ky-NWA"/>
+                                    <constraint firstItem="oK5-XW-tYW" firstAttribute="top" secondItem="u33-Ne-Ytk" secondAttribute="bottom" id="ClR-gX-Qha"/>
+                                    <constraint firstItem="XMc-od-elD" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="H8O-Xf-Y8l"/>
+                                    <constraint firstAttribute="bottom" secondItem="GM8-uQ-Y0F" secondAttribute="bottom" id="HJh-GN-K8J"/>
+                                    <constraint firstAttribute="trailing" secondItem="XMc-od-elD" secondAttribute="trailing" id="K31-Xh-9fc"/>
+                                    <constraint firstAttribute="trailing" secondItem="u33-Ne-Ytk" secondAttribute="trailing" id="LTc-18-LPx"/>
+                                    <constraint firstItem="joC-Tp-bDU" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="btg-gB-5RZ"/>
+                                    <constraint firstItem="NIE-G6-6jF" firstAttribute="top" secondItem="oK5-XW-tYW" secondAttribute="bottom" id="dB5-lZ-vpr"/>
+                                    <constraint firstItem="GM8-uQ-Y0F" firstAttribute="top" secondItem="Qwa-hG-RNt" secondAttribute="bottom" id="gLq-Vx-r9F"/>
+                                    <constraint firstAttribute="height" constant="420" id="hb2-Ae-Ni9"/>
+                                    <constraint firstItem="Qwa-hG-RNt" firstAttribute="top" secondItem="NIE-G6-6jF" secondAttribute="bottom" id="heW-yB-ih5"/>
+                                    <constraint firstAttribute="trailing" secondItem="joC-Tp-bDU" secondAttribute="trailing" id="jy4-AO-s4W"/>
+                                    <constraint firstItem="joC-Tp-bDU" firstAttribute="top" secondItem="XMc-od-elD" secondAttribute="bottom" id="nHF-h4-NQs"/>
+                                    <constraint firstItem="u33-Ne-Ytk" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="o9F-GY-DpV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qwa-hG-RNt" secondAttribute="trailing" id="pmw-9A-bzQ"/>
+                                    <constraint firstItem="oK5-XW-tYW" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="u27-SE-4gn"/>
+                                    <constraint firstItem="NIE-G6-6jF" firstAttribute="leading" secondItem="EZe-ml-FLA" secondAttribute="leading" id="uCn-5T-rAN"/>
+                                    <constraint firstAttribute="trailing" secondItem="GM8-uQ-Y0F" secondAttribute="trailing" id="woL-wn-kTz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0X3-rk-mcR"/>
+                        <color key="backgroundColor" white="1" alpha="0.51758620909999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0X3-rk-mcR" firstAttribute="trailing" secondItem="EZe-ml-FLA" secondAttribute="trailing" constant="5" id="UAb-M6-oJc"/>
+                            <constraint firstItem="EZe-ml-FLA" firstAttribute="leading" secondItem="0X3-rk-mcR" secondAttribute="leading" constant="5" id="mMc-Jz-SGz"/>
+                            <constraint firstItem="EZe-ml-FLA" firstAttribute="centerY" secondItem="0X3-rk-mcR" secondAttribute="centerY" id="rwW-fG-ih8"/>
+                            <constraint firstItem="EZe-ml-FLA" firstAttribute="centerX" secondItem="0X3-rk-mcR" secondAttribute="centerX" id="wCC-C2-nYh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="friday" destination="NIE-G6-6jF" id="Ntv-rM-D6g"/>
+                        <outlet property="monday" destination="XMc-od-elD" id="S3U-Wc-IgX"/>
+                        <outlet property="saturday" destination="Qwa-hG-RNt" id="mwf-09-LRY"/>
+                        <outlet property="sunday" destination="GM8-uQ-Y0F" id="JEN-MT-7xf"/>
+                        <outlet property="thusday" destination="oK5-XW-tYW" id="Meh-Vn-Rme"/>
+                        <outlet property="tuesday" destination="joC-Tp-bDU" id="bak-yq-9ih"/>
+                        <outlet property="wednesday" destination="u33-Ne-Ytk" id="Pga-sx-Gmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcL-8I-yB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596.1832061068699" y="64.788732394366207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

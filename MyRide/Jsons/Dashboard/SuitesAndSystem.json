@@ -1,0 +1,47 @@
+[
+    {
+        "GroupId":1,
+        "GroupImg": "1.jpeg",
+        "GroupName": "Dark Riders",
+        "GroupLastTime": "04:01PM",
+        "GroupLastMessage": "EHS&S Objective & Targets System easily handles and simplifies the process of defining objective",
+        "IsNewMessage": true,
+        "NewMessageCount":"12"
+    },
+    {
+        "GroupId":2,
+        "GroupImg": "2.jpeg",
+        "GroupName": "Gost Riders",
+        "GroupLastTime": "04:01PM",
+        "GroupLastMessage": "Targets and helps to automate result tracking mechanism",
+        "IsNewMessage": false,
+        "NewMessageCount":"0"
+    },
+    {
+        "GroupId":3,
+        "GroupImg": "3.png",
+        "GroupName": "Big Bike Club",
+        "GroupLastTime": "04:01PM",
+        "GroupLastMessage": "The system enables organizations to effectively identify",
+        "IsNewMessage": true,
+        "NewMessageCount":"8"
+    },
+    {
+        "GroupId":4,
+        "GroupImg": "4.jpeg",
+        "GroupName": "Just Riders",
+        "GroupLastTime": "04:01PM",
+        "GroupLastMessage": "Manage progress towards achieving the safety objectives and targets that they’ve put in place to reduce or control significant safety aspects.",
+        "IsNewMessage": true,
+        "NewMessageCount":"3"
+    },
+    {
+        "GroupId":5,
+        "GroupImg": "5.png",
+        "GroupName": "Moto Riders",
+        "GroupLastTime": "04:01PM",
+        "GroupLastMessage": "ENVIRONMENT and SUSTAINABILITY MANAGEMENT",
+        "IsNewMessage": true,
+        "NewMessageCount":"1"
+    }
+]

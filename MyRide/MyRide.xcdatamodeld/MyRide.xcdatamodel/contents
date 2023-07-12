@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GroupDetails" representedClassName="GroupDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="gId" optional="YES" attributeType="String"/>
+        <attribute name="gimg" optional="YES" attributeType="String"/>
+        <attribute name="gLastMessgae" optional="YES" attributeType="String"/>
+        <attribute name="gLastTime" optional="YES" attributeType="String"/>
+        <attribute name="gName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RideData" representedClassName="RideData" syncable="YES" codeGenerationType="class">
+        <attribute name="briefingTime" optional="YES" attributeType="String"/>
+        <attribute name="cost" optional="YES" attributeType="String"/>
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="endLocation" optional="YES" attributeType="String"/>
+        <attribute name="flagTime" optional="YES" attributeType="String"/>
+        <attribute name="mealPlan" optional="YES" attributeType="String"/>
+        <attribute name="meetingTime" optional="YES" attributeType="String"/>
+        <attribute name="rideId" optional="YES" attributeType="String"/>
+        <attribute name="rideName" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="String"/>
+        <attribute name="startLocation" optional="YES" attributeType="String"/>
+        <attribute name="weekName" optional="YES" attributeType="String"/>
+    </entity>
+</model>

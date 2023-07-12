@@ -1,0 +1,124 @@
+[{
+    "RideID": 1000,
+    "RideStartDate": "26-Feb-2023",
+    "RideTotalKM": 50,
+    "RideCost": 5000,
+    "RideEndDate": "30-Feb-2023",
+    "RideEndTime": "01:00PM",
+    "RideMeetingTime": "06:00 AM",
+    "FlagOffTime": "07:00AM",
+    "isRideCompleted": true,
+    "RideName": "Forscot Ride",
+    "RideStartPoint": "Dilshad Garden metro Station",
+    "RideEndPoint": "JaipurCity",
+    "RideStartPointLatitute": "0.2554578",
+    "RideStartPointLongtitute": "2136446",
+    "RideEndPointLatitute": "789884",
+    "RideEndPointLongtitute": "645454",
+    "Food": [{
+            "BreakFast": "Paratha",
+            "Lunch": "Paneer",
+            "Dinner": "Chinken"
+        },
+        {
+            "BreakFast": "Paratha",
+            "Lunch": "Paneer",
+            "Dinner": "Chinken"
+        },
+        {
+            "BreakFast": "Paratha",
+            "Lunch": "Paneer",
+            "Dinner": "Chinken"
+        }
+    ],
+    "RiderList": [{
+            "RiderName": "Riyasat",
+            "RiderMobileNumbr": "7011610754",
+            "RiderBikeName": "RE Himalayan",
+            "RiderID": "RA7011610754",
+            "RiderCompletedKM": 10000,
+            "RiderImg": "RiyasatProfile.png",
+            "isRiderJoin": true,
+            "RiderStatus": "Pro Rider",
+            "RiderRank": 5,
+            "RiderEmergencyContact": "9871012498",
+            "RiderOtherEmergencyContact": "1234567890"
+        },
+        {
+            "RiderName": "Adnan Khan",
+            "RiderMobileNumbr": "9876543210",
+            "RiderBikeName": "RE Classic",
+            "RiderID": "AK9876543210",
+            "RiderCompletedKM": 12000,
+            "RiderImg": "Adnan.png",
+            "isRiderJoin": true,
+            "RiderStatus": "Pro Rider",
+            "RiderRank": 2,
+            "RiderEmergencyContact": "1234567890",
+            "RiderOtherEmergencyContact": "1234567890"
+        }
+    ]
+},
+    {
+        "RideID": 1001,
+        "RideStartDate": "26-Feb-2023",
+        "RideTotalKM": 50,
+        "RideCost": 5000,
+        "RideEndDate": "30-Feb-2023",
+        "RideEndTime": "01:00PM",
+        "RideMeetingTime": "06:00 AM",
+        "FlagOffTime": "07:00AM",
+        "isRideCompleted": false,
+        "RideName": "Delhi Ride",
+        "RideStartPoint": "Dilshad Garden metro Station",
+        "RideEndPoint": "JaipurCity",
+        "RideStartPointLatitute": "0.2554578",
+        "RideStartPointLongtitute": "2136446",
+        "RideEndPointLatitute": "789884",
+        "RideEndPointLongtitute": "645454",
+        "Food": [{
+                "BreakFast": "Paratha",
+                "Lunch": "Paneer",
+                "Dinner": "Chinken"
+            },
+            {
+                "BreakFast": "Paratha",
+                "Lunch": "Paneer",
+                "Dinner": "Chinken"
+            },
+            {
+                "BreakFast": "Paratha",
+                "Lunch": "Paneer",
+                "Dinner": "Chinken"
+            }
+        ],
+        "RiderList": [{
+                "RiderName": "Riyasat",
+                "RiderMobileNumbr": "7011610754",
+                "RiderBikeName": "RE Himalayan",
+                "RiderID": "RA7011610754",
+                "RiderCompletedKM": 10000,
+                "RiderImg": "RiyasatProfile.png",
+                "isRiderJoin": true,
+                "RiderStatus": "Pro Rider",
+                "RiderRank": 5,
+                "RiderEmergencyContact": "9871012498",
+                "RiderOtherEmergencyContact": "1234567890"
+            },
+            {
+                "RiderName": "Adnan Khan",
+                "RiderMobileNumbr": "9876543210",
+                "RiderBikeName": "RE Classic",
+                "RiderID": "AK9876543210",
+                "RiderCompletedKM": 12000,
+                "RiderImg": "Adnan.png",
+                "isRiderJoin": true,
+                "RiderStatus": "Pro Rider",
+                "RiderRank": 2,
+                "RiderEmergencyContact": "1234567890",
+                "RiderOtherEmergencyContact": "1234567890"
+            }
+        ]
+    }
+
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>354266022666-0s3g2teiqa35rs3fb4b98enmea6ato1r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.354266022666-0s3g2teiqa35rs3fb4b98enmea6ato1r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBdcze_TbXPhIBe7u1VPdGb8URQWPr4LU4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>354266022666</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.riyasat.MyRide</string>
+	<key>PROJECT_ID</key>
+	<string>myride-379106</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myride-379106.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:354266022666:ios:ae8c5e2a50924f0086b0f3</string>
+</dict>
+</plist>
